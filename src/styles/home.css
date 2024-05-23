@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #39eab5;
   }
   
   .hero-section {
     text-align: center;
-    color: #fff;
+    color: #030000;
     /* background: url('/path-to-your-image.jpg') no-repeat center center/cover; */
     padding: 50px;
     border-radius: 10px;
