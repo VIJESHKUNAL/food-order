@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/about.css";
 
 const About = () => {
@@ -9,6 +10,9 @@ const About = () => {
         <p className="about-text">
           We are passionate about delivering the best food experience...
         </p>
+        <Link to="/" className="nav-button">
+          Go to Home
+        </Link>
       </div>
     </div>
   );

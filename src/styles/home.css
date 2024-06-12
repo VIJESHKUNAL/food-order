@@ -4,19 +4,71 @@
     align-items: center;
     height: 100vh;
     background-color: #0b67c3;
+  text-align: center;
+  background-image: url('../images/bg image.jpg'); /* Make sure you have a background.jpg in the src/images directory */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
 
-  }
-  
-  .hero-section {
-    text-align: center;
-    color: #030000;
-    /* background: url('/path-to-your-image.jpg') no-repeat center center/cover; */
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  .hero-text {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.hero-section {
+  margin: 20px 0;
+}
+
+.hero-text {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.menu-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 0 10%;
+}
+
+.menu-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.food-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  color: black;
+  text-align: left;
+}
