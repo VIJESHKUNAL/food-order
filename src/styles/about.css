@@ -1,26 +1,61 @@
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #20e1d1;
-  }
-  
-  .about-content {
-    text-align: center;
-    max-width: 600px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(193, 61, 74, 0.2);
-    border-radius: 10px;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-text {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
+  text-align: center;
+  background-image: url('../images/bg image.jpg'); /* Make sure you have a background.jpg in the src/images directory */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  color: white;
+}
+
+.company-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-logo {
+  width: 40px;
+  height: auto;
+  padding-top: 2rem;
+}
