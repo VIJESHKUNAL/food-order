@@ -1,6 +1,6 @@
 .about-container {
   text-align: center;
-  background-image: url('../images/bg image.jpg'); /* Make sure you have a background.jpg in the src/images directory */
+  background-image: url('../images/backg.jpg'); /* Make sure you have a background.jpg in the src/images directory */
   background-size: cover;
   background-position: center;
   padding: 20px;

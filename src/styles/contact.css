@@ -1,6 +1,6 @@
 .contact-container {
   text-align: center;
-  background-image: url('../images/bg image.jpg'); /* Ensure you have a contact-background.jpg in the src/images directory */
+  background-image: url('../images/backg.jpg'); /* Ensure you have a contact-background.jpg in the src/images directory */
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -44,7 +44,7 @@
 }
 
 .button {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(103, 152, 141, 0.671);
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
