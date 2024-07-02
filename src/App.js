@@ -7,21 +7,25 @@ import Cart from "./pages/Cart";
 import "./App.css";
 import Login from "./pages/login";
 import SignUp from "./pages/signin";
+import { CartProvider } from "./Context/cartcontext";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signin" element={<SignUp />} />
-        </Routes>
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signin" element={<SignUp />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 

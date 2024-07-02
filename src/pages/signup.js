@@ -20,6 +20,10 @@ const SignUp = () => {
             <label>Password</label>
             <input type="password" required />
           </div>
+          <div className="form-group">
+            <label>Confirm Password</label>
+            <input type="password" required />
+          </div>
           <button type="submit" className="auth-button">
             Sign Up
           </button>
@@ -28,7 +32,7 @@ const SignUp = () => {
           Already have an account? <Link to="/login">Login</Link>
         </p>
         <p>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </p>
       </div>
     </div>

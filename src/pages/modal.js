@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/modal.css";
+import { CartContext } from "../Context/cartcontext.js";
 
 const Modal = ({ item, isOpen, onClose }) => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useContext(CartContext);
 
   const handleIncrease = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -12,6 +14,11 @@ const Modal = ({ item, isOpen, onClose }) => {
     if (quantity > 1) {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
+  };
+
+  const handleAddToCart = () => {
+    addToCart({ ...item, quantity });
+    onClose();
   };
 
   if (!isOpen) return null;
@@ -31,7 +38,9 @@ const Modal = ({ item, isOpen, onClose }) => {
           <span>{quantity}</span>
           <button onClick={handleIncrease}>+</button>
         </div>
-        <button className="add-to-cart-button">Add to Cart</button>
+        <button className="add-to-cart-button" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
       </div>
     </div>
   );

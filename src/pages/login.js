@@ -21,7 +21,10 @@ const Login = () => {
           </button>
         </form>
         <p>
-          Don't have an account? <Link to="/signu p">Sign Up</Link>
+          Don't have an account? <Link to="/signup">Sign Up</Link>
+          <Link to="/" className="nav-button">
+            Go to Home
+          </Link>
         </p>
       </div>
     </div>
